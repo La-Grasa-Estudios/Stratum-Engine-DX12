@@ -5,7 +5,9 @@ Right now it has added support for:
 - Vertex Buffer Views
 - Index Buffer Views
 - Shaders & Automatic Root Signature creation
-Todo:
+
+To do:
+
 - 2D Textures
 - 3D Textures
 - Samplers
