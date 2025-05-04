@@ -1,0 +1,2137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de origen">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine\Common.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Math\Vector2.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Handle.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\win32\win32_common.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\Framebuffer.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Util\FileReader.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Media\av\BSF.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Media\av\common.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Media\av\Decoder.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Media\av\Encoder.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Media\av\Frame.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Media\av\InputFormat.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Media\av\OptSetter.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Media\av\OutputFormat.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Media\av\Packet.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Media\av\Rational.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Media\av\Resample.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Media\av\Scale.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Media\av\Stream.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Media\av\StreamReader.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Media\av\StreamWriter.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Media\av\VideoCapture.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Media\VideoDecode.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Sound\adpcm-lib\adpcm.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Sound\adpcm-lib\wave.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Sound\miniaudio\miniaudio.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Sound\AudioEngine.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Sound\AudioSourceBase.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Sound\AudioSystem.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Sound\brstm_codec.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Sound\BRSTMAudioSource.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Sound\RawAudioBuffer.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Util\DoubleBufferArray.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Util\StackAllocator.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Util\StaticAllocator.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Util\ThreadSafeResource.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Util\VoidPtr.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\VFS\AssetPack.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\VFS\ZVFS.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\GlobalVar.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Math\HalfFloat.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\Logger.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Math\NormByte.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\Ref.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ThreadSafeRingBuffer.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\Timer.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Math\UnormInt.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\VarRegistry.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\znmsp.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\bc7\Bc7Compress.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\bc7\Bc7Core.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\bc7\Bc7Mode.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\bc7\Bc7Pca.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\bc7\Bc7Tables.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\bc7\Metrics.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\bc7\pch.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\bc7\SnippetComputeOpaqueSubset2.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\bc7\SnippetComputeOpaqueSubset3.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\bc7\SnippetDecompressIndexedSubset.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\bc7\SnippetHorizontalSum4.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\bc7\SnippetInsertRemoveZeroBit.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\bc7\SnippetLevelsBuffer.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\bc7\SnippetLevelsBufferHalf.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\bc7\SnippetLevelsMinimum.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\bc7\SnippetStoreNodeShort.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\bc7\SnippetTargetSSSE3.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\bc7\Worker.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\_features.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\_fixes.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\_noise.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\_swizzle.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\_swizzle_func.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\_vectorize.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\compute_common.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\compute_vector_relational.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\qualifier.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\setup.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\type_float.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\type_half.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\type_mat2x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\type_mat2x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\type_mat2x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\type_mat3x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\type_mat3x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\type_mat3x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\type_mat4x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\type_mat4x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\type_mat4x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\type_quat.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\type_vec1.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\type_vec2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\type_vec3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\detail\type_vec4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_clip_space.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_common.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_double2x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_double2x2_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_double2x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_double2x3_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_double2x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_double2x4_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_double3x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_double3x2_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_double3x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_double3x3_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_double3x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_double3x4_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_double4x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_double4x2_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_double4x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_double4x3_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_double4x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_double4x4_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_float2x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_float2x2_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_float2x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_float2x3_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_float2x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_float2x4_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_float3x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_float3x2_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_float3x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_float3x3_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_float3x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_float3x4_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_float4x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_float4x2_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_float4x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_float4x3_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_float4x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_float4x4_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_int2x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_int2x2_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_int2x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_int2x3_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_int2x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_int2x4_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_int3x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_int3x2_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_int3x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_int3x3_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_int3x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_int3x4_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_int4x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_int4x2_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_int4x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_int4x3_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_int4x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_int4x4_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_projection.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_relational.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_transform.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_uint2x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_uint2x2_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_uint2x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_uint2x3_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_uint2x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_uint2x4_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_uint3x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_uint3x2_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_uint3x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_uint3x3_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_uint3x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_uint3x4_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_uint4x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_uint4x2_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_uint4x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_uint4x3_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_uint4x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\matrix_uint4x4_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\quaternion_common.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\quaternion_double.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\quaternion_double_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\quaternion_exponential.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\quaternion_float.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\quaternion_float_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\quaternion_geometric.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\quaternion_relational.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\quaternion_transform.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\quaternion_trigonometric.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\scalar_common.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\scalar_constants.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\scalar_int_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\scalar_integer.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\scalar_packing.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\scalar_relational.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\scalar_uint_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\scalar_ulp.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_bool1.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_bool1_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_bool2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_bool2_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_bool3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_bool3_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_bool4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_bool4_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_common.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_double1.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_double1_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_double2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_double2_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_double3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_double3_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_double4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_double4_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_float1.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_float1_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_float2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_float2_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_float3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_float3_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_float4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_float4_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_int1.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_int1_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_int2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_int2_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_int3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_int3_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_int4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_int4_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_integer.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_packing.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_relational.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_uint1.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_uint1_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_uint2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_uint2_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_uint3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_uint3_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_uint4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_uint4_sized.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext\vector_ulp.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtc\bitfield.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtc\color_space.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtc\constants.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtc\epsilon.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtc\integer.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtc\matrix_access.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtc\matrix_integer.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtc\matrix_inverse.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtc\matrix_transform.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtc\noise.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtc\packing.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtc\quaternion.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtc\random.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtc\reciprocal.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtc\round.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtc\type_aligned.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtc\type_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtc\type_ptr.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtc\ulp.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtc\vec1.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\associated_min_max.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\bit.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\closest_point.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\color_encoding.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\color_space.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\color_space_YCoCg.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\common.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\compatibility.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\component_wise.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\dual_quaternion.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\easing.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\euler_angles.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\extend.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\extended_min_max.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\exterior_product.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\fast_exponential.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\fast_square_root.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\fast_trigonometry.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\functions.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\gradient_paint.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\handed_coordinate_space.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\hash.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\integer.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\intersect.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\io.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\log_base.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\matrix_cross_product.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\matrix_decompose.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\matrix_factorisation.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\matrix_interpolation.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\matrix_major_storage.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\matrix_operation.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\matrix_query.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\matrix_transform_2d.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\mixed_product.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\norm.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\normal.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\normalize_dot.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\number_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\optimum_pow.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\orthonormalize.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\perpendicular.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\polar_coordinates.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\projection.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\quaternion.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\range.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\raw_data.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\rotate_normalized_axis.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\rotate_vector.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\scalar_multiplication.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\scalar_relational.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\spline.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\std_based_type.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\string_cast.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\texture.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\transform.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\transform2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\type_aligned.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\type_trait.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\vec_swizzle.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\vector_angle.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\vector_query.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\gtx\wrap.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\simd\common.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\simd\exponential.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\simd\geometric.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\simd\integer.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\simd\matrix.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\simd\neon.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\simd\packing.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\simd\platform.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\simd\trigonometric.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\simd\vector_relational.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\common.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\exponential.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\ext.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\fwd.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\geometric.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\glm.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\integer.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\mat2x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\mat2x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\mat2x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\mat3x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\mat3x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\mat3x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\mat4x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\mat4x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\mat4x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\matrix.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\packing.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\trigonometric.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\vec2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\vec3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\vec4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\glm\vector_relational.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\zlib\izlibstream.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\zlib\ozlibstream.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\zlib\zlib_streambuf.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\etc1_utils.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\image_DXT.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\image_helper.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\md5.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\pkm_helper.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\pvr_helper.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\stb_image.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\stb_image_write.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\stb_image0.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\stbi_DDS.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\stbi_DDS_c.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\stbi_ext.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\stbi_ext_c.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\stbi_pkm.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\stbi_pkm_c.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\stbi_pvr.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Thirdparty\stbi_pvr_c.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\JobManager.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\GraphicsCommandBuffer.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\DevTools\ShaderCompiler\ShaderPreprocessor.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\Time.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\Buffer.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\ComputePipeline.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\ConstantBuffer.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\Frustum.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\ImageResource.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\RendererContext.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\Texture3D.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\TextureSampler.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Asset\ShaderPermutationFile.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\GraphicsFormats.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\Window.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Event\EventHandler.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Input\Input.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Input\KeyCode.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\DX12Constants.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\DX12Fence.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\GlobalSharedData.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\DX12Utils.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\directx\d3d12.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\directx\d3d12compatibility.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\directx\d3d12sdklayers.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\directx\d3d12shader.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\directx\D3D12TokenizedProgramFormat.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\directx\d3dcommon.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\directx\d3dx12.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\directx\d3dx12_barriers.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\directx\d3dx12_check_feature_support.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\directx\d3dx12_core.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\directx\d3dx12_default.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\directx\d3dx12_pipeline_state_stream.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\directx\d3dx12_property_format_table.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\directx\d3dx12_render_pass.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\directx\d3dx12_resource_helpers.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\directx\d3dx12_root_signature.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\directx\d3dx12_state_object.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\directx\DirectML.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\directx\dxcore.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\directx\dxcore_interface.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\directx\dxgicommon.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\directx\dxgiformat.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\DX12DescriptorHeap.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\RenderCommands.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\CopyEngine.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\GraphicsPipeline.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\VertexBuffer.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\IndexBuffer.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\DX12\RingBufferDescriptorHeap.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\NVRHI_d3d12.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\NVRHI_d3d11.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Asset\TextureLoader.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Asset\AssetMaterial.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\ShapeProvider.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\Mesh.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\Vertex.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\HalfFloat.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\NormByte.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\NormShort.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\UnormInt.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Util\PathUtils.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\ComputeCommandBuffer.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\CopyCommandBuffer.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\Post\Passes\BloomPass.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\Post\Passes\LuminancePass.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\Post\Passes\Outputs.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\Post\Passes\TonemapPass.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\Post\PostProcessingCommon.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\Post\PostProcessingPass.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\Post\PostProcessingStack.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Util\ShaderReflection.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\BindlessDescriptorIndex.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\BindlessDescriptorTable.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\Material.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\DevTools\md5.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\DevTools\ShaderCompiler.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Util\DoubleBufferResource.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Util\Globals.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Util\HeapArray.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Thirdparty\imgui\imconfig.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Thirdparty\imgui\imgui.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Thirdparty\imgui\imgui_impl_dx12.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Thirdparty\imgui\imgui_impl_sdl3.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Thirdparty\imgui\imgui_internal.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Thirdparty\imgui\implot.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Thirdparty\imgui\implot_internal.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Thirdparty\imgui\imstb_rectpack.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Thirdparty\imgui\imstb_textedit.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Thirdparty\imgui\imstb_truetype.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Util\FileReader.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Media\VideoDecode.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Sound\adpcm-lib\adpcm.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Sound\adpcm-lib\wave.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Sound\miniaudio\miniaudio.c">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Sound\AudioEngine.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Sound\AudioSourceBase.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Sound\brstm_codec.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Sound\BRSTMAudioSource.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Sound\RawAudioBuffer.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\VFS\AssetPack.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\VFS\ZVFS.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\GlobalVar.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Math\HalfFloat.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\Logger.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Math\NormByte.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\Ref.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\Timer.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Math\Unormint.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\VarRegistry.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\bc7\Bc7Compress.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\bc7\Bc7Core.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\bc7\Bc7CoreMode0.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\bc7\Bc7CoreMode1.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\bc7\Bc7CoreMode2.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\bc7\Bc7CoreMode3.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\bc7\Bc7CoreMode4.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\bc7\Bc7CoreMode5.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\bc7\Bc7CoreMode6.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\bc7\Bc7CoreMode6Index2.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\bc7\Bc7CoreMode7.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\bc7\Bc7PcaEigen.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\bc7\Bc7Tables.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\bc7\Metrics.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\bc7\pch.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\bc7\Worker.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\glm\detail\glm.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\zlib\izlibstream.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\zlib\ozlibstream.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\etc1_utils.c">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\image_DXT.c">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\image_helper.c">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\md5.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\JobManager.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Thirdparty\stbi_image.c">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\DevTools\ShaderCompiler\ShaderPreprocessor.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\Time.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\ComputePipeline.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\Framebuffer.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\Frustum.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\ImageResource.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\Texture3D.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\TextureSampler.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Asset\ShaderPermutationFile.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\Window.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Event\EventHandler.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Input\Input.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\DX12\DX12Utils.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\DX12\DX12DescriptorHeap.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\DX12\DX12Fence.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\GraphicsCommandBuffer.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\Buffer.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\CopyEngine.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\GraphicsPipeline.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\VertexBuffer.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\IndexBuffer.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\RendererContext.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\NVRHI_d3d12.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\NVRHI_d3d11.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\ConstantBuffer.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Asset\TextureLoader.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\ShapeProvider.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\Mesh.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\Vertex.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\HalfFloat.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\NormByte.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\NormShort.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\Unormint.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Util\PathUtils.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\GraphicsFormats.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\ComputeCommandBuffer.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\CopyCommandBuffer.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\Post\Passes\BloomPass.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\Post\Passes\LuminancePass.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\Post\Passes\TonemapPass.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\Post\PostProcessingPass.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\Post\PostProcessingStack.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\BindlessDescriptorIndex.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\BindlessDescriptorTable.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\Material.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\DevTools\md5.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\DevTools\ShaderCompiler.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Util\Globals.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Thirdparty\imgui\imgui.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Thirdparty\imgui\imgui_draw.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Thirdparty\imgui\imgui_impl_dx12.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Thirdparty\imgui\imgui_impl_sdl3.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Thirdparty\imgui\imgui_tables.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Thirdparty\imgui\imgui_widgets.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Thirdparty\imgui\implot.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Thirdparty\imgui\implot_items.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Thirdparty\glm\detail\func_common.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\func_common_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\func_exponential.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\func_exponential_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\func_geometric.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\func_geometric_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\func_integer.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\func_integer_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\func_matrix.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\func_matrix_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\func_packing.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\func_packing_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\func_trigonometric.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\func_trigonometric_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\func_vector_relational.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\func_vector_relational_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\type_half.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\type_mat2x2.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\type_mat2x3.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\type_mat2x4.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\type_mat3x2.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\type_mat3x3.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\type_mat3x4.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\type_mat4x2.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\type_mat4x3.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\type_mat4x4.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\type_mat4x4_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\type_quat.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\type_quat_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\type_vec1.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\type_vec2.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\type_vec3.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\type_vec4.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\detail\type_vec4_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\ext\matrix_clip_space.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\ext\matrix_common.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\ext\matrix_projection.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\ext\matrix_relational.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\ext\matrix_transform.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\ext\quaternion_common.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\ext\quaternion_common_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\ext\quaternion_exponential.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\ext\quaternion_geometric.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\ext\quaternion_relational.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\ext\quaternion_transform.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\ext\quaternion_trigonometric.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\ext\scalar_common.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\ext\scalar_constants.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\ext\scalar_integer.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\ext\scalar_packing.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\ext\scalar_relational.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\ext\scalar_ulp.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\ext\vector_common.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\ext\vector_integer.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\ext\vector_packing.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\ext\vector_relational.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\ext\vector_ulp.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtc\bitfield.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtc\color_space.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtc\constants.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtc\epsilon.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtc\integer.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtc\matrix_access.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtc\matrix_inverse.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtc\matrix_transform.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtc\noise.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtc\packing.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtc\quaternion.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtc\quaternion_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtc\random.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtc\reciprocal.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtc\round.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtc\type_precision.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtc\type_ptr.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtc\ulp.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\associated_min_max.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\bit.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\closest_point.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\color_encoding.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\color_space.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\color_space_YCoCg.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\common.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\compatibility.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\component_wise.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\dual_quaternion.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\easing.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\euler_angles.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\extend.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\extended_min_max.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\exterior_product.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\fast_exponential.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\fast_square_root.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\fast_trigonometry.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\float_notmalize.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\functions.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\gradient_paint.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\handed_coordinate_space.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\hash.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\integer.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\intersect.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\io.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\log_base.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\matrix_cross_product.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\matrix_decompose.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\matrix_factorisation.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\matrix_interpolation.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\matrix_major_storage.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\matrix_operation.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\matrix_query.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\matrix_transform_2d.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\mixed_product.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\norm.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\normal.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\normalize_dot.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\number_precision.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\optimum_pow.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\orthonormalize.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\perpendicular.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\polar_coordinates.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\projection.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\quaternion.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\raw_data.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\rotate_normalized_axis.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\rotate_vector.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\scalar_relational.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\spline.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\std_based_type.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\string_cast.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\texture.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\transform.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\transform2.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\type_aligned.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\type_trait.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\vector_angle.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\vector_query.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Thirdparty\glm\gtx\wrap.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="Engine\Renderer\DX12\directx\d3d12.idl">
+      <Filter>Archivos de origen</Filter>
+    </Midl>
+    <Midl Include="Engine\Renderer\DX12\directx\d3d12compatibility.idl">
+      <Filter>Archivos de origen</Filter>
+    </Midl>
+    <Midl Include="Engine\Renderer\DX12\directx\d3d12sdklayers.idl">
+      <Filter>Archivos de origen</Filter>
+    </Midl>
+    <Midl Include="Engine\Renderer\DX12\directx\d3dcommon.idl">
+      <Filter>Archivos de origen</Filter>
+    </Midl>
+    <Midl Include="Engine\Renderer\DX12\directx\dxgicommon.idl">
+      <Filter>Archivos de origen</Filter>
+    </Midl>
+    <Midl Include="Engine\Renderer\DX12\directx\dxgiformat.idl">
+      <Filter>Archivos de origen</Filter>
+    </Midl>
+  </ItemGroup>
+</Project>
